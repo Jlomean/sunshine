@@ -1,0 +1,18 @@
+body {
+	font-family: arial, helvetica, sans-serif;
+	background-color: lightblue;
+}
+.clicker {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+	padding: 10%;
+}
+
+#sun {
+	background-color: yellow;
+	border-radius: 100%;
+	padding: 10em;
+	margin-bottom: 1em;
+}
