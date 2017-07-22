@@ -16,3 +16,20 @@ body {
 	padding: 10em;
 	margin-bottom: 1em;
 }
+
+.game {
+	display : flex;
+	flex-direction: row;
+	justify-content : space-around;
+	max-width: 80%;
+	margin: auto;
+}
+
+.upgrades {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 0.5em 1em;
+	border : 1px solid black;
+	min-width : 25%;
+}

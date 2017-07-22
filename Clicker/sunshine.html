@@ -8,13 +8,23 @@
 
 <body>
 	
-	<div class="clicker">
-		<button id="sun" onclick="clickButton()"></button>
-		<div id="display" value="0">
-		Chaleur : 0 ° K
+	<div class ="game">
+	
+		<div class="clicker">
+			<h2>Touchez le soleil, et faites-le briller ! ☺</h2>
+			<button id="sun" onclick="clickButton()"></button>
+			<div id="display" value="0">
+				Chaleur : 0 ° K
+			</div>
 		</div>
-		<button id="multiply" onclick="augmenterMultiplicateur()">Multiplicateur : 1 | Acheter (prix : 50 ° K)</button>
+		
+		<div class="upgrades">
+			<h3>Améliorations</h3>
+			<button id="multiply" onclick="augmenterMultiplicateur()">Multiplicateur : 1 | Acheter pour 10 ° K</button>
+			<button id="autoclic" onclick="autoClick()">autoclick : off | Acheter pour 500 ° K</button>
+		</div>
+		
 	</div>
-
+	
 	<script src="js/clicker.js"></script>	
 </body>
