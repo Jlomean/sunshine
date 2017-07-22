@@ -13,18 +13,23 @@
 		<div class="clicker">
 			<h2>Touchez le soleil, et faites-le briller ! ☺</h2>
 			<button id="sun" onclick="clickButton()"></button>
-			<div id="display" value="0">
-				Chaleur : 0 ° K
-			</div>
+			<p id="special"></p>
 		</div>
 		
 		<div class="upgrades">
+			<h3>Lumière</h3>
+			<div id="display" value="0">
+				0 candela
+			</div>
 			<h3>Améliorations</h3>
-			<button id="multiply" onclick="augmenterMultiplicateur()">Multiplicateur : 1 | Acheter pour 10 ° K</button>
-			<button id="autoclic" onclick="autoClick()">autoclick : off | Acheter pour 500 ° K</button>
+			<button id="multiply" onclick="augmenterMultiplicateur()">Multiplicateur : 1 | Acheter pour 50 candela</button>
+			<button id="autoclic" onclick="autoClick()">autoclic : off | Acheter pour 500 candela</button>
+			<p id="boughtauto">autoclic : on</p>
+			<button id="bonus" onclick="bonusScore()">Fiat lux : off | Acheter pour 5000 candela</button>
 		</div>
 		
 	</div>
 	
-	<script src="js/clicker.js"></script>	
+	<script src="js/clicker.js"></script>
+	<script>hideButtons()</script>
 </body>

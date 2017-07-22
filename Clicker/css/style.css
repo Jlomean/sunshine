@@ -8,6 +8,7 @@ body {
 	align-items: center;
 	margin: auto;
 	padding: 10%;
+	border : 1px solid black;
 }
 
 #sun {
@@ -15,6 +16,21 @@ body {
 	border-radius: 100%;
 	padding: 10em;
 	margin-bottom: 1em;
+}
+
+#special {
+	color: midnightblue;
+	background-color: whitesmoke;
+	padding: 1em;
+	border-radius: 5%;
+	text-transform: uppercase;
+	font-weight: bold;
+	visibility: hidden;
+}
+
+#display {
+	border-bottom: 1px solid black;
+	padding-bottom: 1.5em;
 }
 
 .game {
@@ -32,4 +48,9 @@ body {
 	padding: 0.5em 1em;
 	border : 1px solid black;
 	min-width : 25%;
+}
+
+#boughtauto {
+	visibility: collapse;
+	margin: 0;
 }
