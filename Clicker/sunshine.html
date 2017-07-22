@@ -8,12 +8,13 @@
 
 <body>
 	
+	<h2>Touchez le soleil, et faites-le briller ! ☺</h2>
 	<div class ="game">
 	
-		<div class="clicker">
-			<h2>Touchez le soleil, et faites-le briller ! ☺</h2>
+		<div id="gamearea">
 			<button id="sun" onclick="clickButton()"></button>
 			<p id="special"></p>
+			<div class="ground"></div>
 		</div>
 		
 		<div class="upgrades">
@@ -24,12 +25,13 @@
 			<h3>Améliorations</h3>
 			<button id="multiply" onclick="augmenterMultiplicateur()">Multiplicateur : 1 | Acheter pour 50 candela</button>
 			<button id="autoclic" onclick="autoClick()">autoclic : off | Acheter pour 500 candela</button>
+			<button id="bonus" onclick="bonusScore()">Boost : off | Lancer pour 5000 candela</button>
 			<p id="boughtauto">autoclic : on</p>
-			<button id="bonus" onclick="bonusScore()">Fiat lux : off | Acheter pour 5000 candela</button>
 		</div>
 		
 	</div>
 	
 	<script src="js/clicker.js"></script>
-	<script>hideButtons()</script>
+	<script>colorChange()</script>
+	
 </body>

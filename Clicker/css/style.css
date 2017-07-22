@@ -2,26 +2,43 @@ body {
 	font-family: arial, helvetica, sans-serif;
 	background-color: lightblue;
 }
-.clicker {
+
+h2 {
+	margin: 1em;
+	text-align: center;
+}
+
+#gamearea {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	margin: auto;
-	padding: 10%;
+	min-width: 60%;
+	min-height: 25rem;
 	border : 1px solid black;
+	position: relative;
 }
 
 #sun {
 	background-color: yellow;
 	border-radius: 100%;
-	padding: 10em;
-	margin-bottom: 1em;
+	padding: 2em;
+	margin: 3em;
+	align-self: flex-end;
+}
+
+.ground {
+	position: absolute;
+	bottom: 0;
+	background-color: green;
+	padding: 3em 0;
+	min-width: 100%;
 }
 
 #special {
 	color: midnightblue;
 	background-color: whitesmoke;
 	padding: 1em;
+	margin: auto;
 	border-radius: 5%;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -52,5 +69,5 @@ body {
 
 #boughtauto {
 	visibility: collapse;
-	margin: 0;
+	margin: 1em;
 }
