@@ -48,7 +48,7 @@ function bonusScore() {
 		bonusValue = bonusValue/2;
 		document.getElementById("bonus").style.visibility= "visible";
 		document.getElementById("special").style.visibility= "hidden";
-		document.getElementById("bonus").innerHTML = "Fiat lux : off | Acheter pour 5000 candela";			
+		document.getElementById("bonus").innerHTML = "Boost : off | Lancer pour 5000 candela";			
 	}, 30000);
 	clearInterval();
 }
