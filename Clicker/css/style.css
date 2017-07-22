@@ -35,14 +35,16 @@ h2 {
 }
 
 #special {
-	color: midnightblue;
-	background-color: whitesmoke;
-	padding: 1em;
-	margin: auto;
-	border-radius: 5%;
+	color: whitesmoke;
+	background: linear-gradient(red,orange,yellow,green,cyan,blue,magenta);padding: 2em;
+	margin: 5em auto 0 auto;
+	border-top-left-radius: 20em;
+	border-top-right-radius: 20em;
 	text-transform: uppercase;
 	font-weight: bold;
 	visibility: hidden;
+	bottom: auto;
+	position: relative;
 }
 
 #display {
