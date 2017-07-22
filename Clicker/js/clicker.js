@@ -2,6 +2,7 @@
 var score = 0; //Initial score 
 var multiplier = 1; //Initial multiplier
 var bonusValue = 1; //Bonus value defines wether or not score is doubled by bonusScore function
+var multiPrice = 50;
 
 function clickButton() {
 	score += multiplier*bonusValue ;
@@ -10,10 +11,11 @@ function clickButton() {
 }
 
 function augmenterMultiplicateur() {
-	score -= (50*multiplier);	
+	score -= multiPrice;
+	multiPrice = multiPrice*2;
 	multiplier++;
 	document.getElementById("display").innerHTML = score + " candela";
-	document.getElementById("multiply").innerHTML = "Multiplicateur : " + multiplier + " | Acheter pour " + 50*multiplier + " candela";
+	document.getElementById("multiply").innerHTML = "Multiplicateur : " + multiplier + " | Acheter pour " + multiPrice + " candela";
 	hideButtons();
 }
 
@@ -46,7 +48,7 @@ function bonusScore() {
 }
 
 function hideButtons() {
-	if (score >= (50*multiplier)) {
+	if (score >= (multiPrice)) {
 		document.getElementById("multiply").disabled = false;
 	}
 	else {
